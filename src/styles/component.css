@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightGrey: hsl(219, 14%, 63%);
+  --mediumGrey: hsl(214, 14%, 23%);
+  --darkBlue: hsl(213, 19%, 18%);
+  --orage: hsl(25, 97%, 53%);
+  --darkBlueG: hsl(216, 8%, 12%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: var(--darkBlue);
+  background: linear-gradient(0deg, var(--darkBlueG) 0%, var(--darkBlue) 60%);
+  max-width: 90%;
+  font-family: "Overpass", sans-serif;
+  padding: 20px;
+  height: 350px;
+}
+
+.header {
+  position: relative;
+}
+
+#star {
+  background-color: var(--mediumGrey);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.info {
+  padding: 20px 0px 20px 0px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.info h2 {
+  color: var(--white);
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.info p {
+  color: var(--lightGrey);
+  font-size: 15px;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0px 20px 0px;
+}
+
+.button {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  background-color: var(--mediumGrey);
+  color: var(--lightGrey);
+  border: none;
+  border-radius: 50%;
+  align-items: baseline;
+}
+
+.button:hover {
+  background-color: var(--lightGrey);
+  color: var(--white);
+}
+
+.button:focus {
+  background-color: var(--orage);
+  color: var(--white);
+}
+
+#submit {
+  background-color: var(--orage);
+  border: none;
+  color: var(--white);
+  text-align: center;
+  font-size: 700;
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+#submit:hover {
+  background-color: var(--white);
+  color: var(--orage);
+}
+
+.thankYou {
+  display: none;
+}
+
+.headerThank{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoThank{
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#selection{
+  color: var(--orage);
+  width: max-content;
+  font-size: 15px;
+  background-color: var(--mediumGrey);
+  border-radius: 30px;
+  padding: 7px 20px 7px 20px;
+
+}
+
+.infoThank h2 {
+color: var(--white);
+font-size: 20px;
+padding: 20px 0 20px 0;
+}
+
+.infoThank p {
+color: var(--lightGrey);
+font-size: 15px;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    justify-content: center;
+    width: 340px;
+  }
+}
