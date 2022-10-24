@@ -16,3 +16,10 @@ btns.forEach(btn => btn.addEventListener("click", function (){
   rate = btn.value;
 }));
 
+document.addEventListener("click",function (event){
+  let targetId = event.target.id;
+  if (targetId !== "button" && targetId !== "submit"){
+    rate = 0;
+  }
+}
+);
