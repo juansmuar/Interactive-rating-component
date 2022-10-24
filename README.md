@@ -24,6 +24,11 @@ Users should be able to:
 
 - Visualize the card component in desktop a mobile resolution properly and select a rate option to submit.
 
+### Screenshot
+
+![](./screenshots/main.png)
+![](./screenshots/thank.png)
+
 ## My process
 
 ### Built with
